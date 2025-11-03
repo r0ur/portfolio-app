@@ -1,7 +1,7 @@
-export default function AboutSection() {
+export default function About() {
   return (
-    <section className="text-white">
-      <div className="text-right gap-2 flex-col flex">
+    <section>
+      <div className="text-right gap-2 flex-col flex text-white">
         <h1 className="uppercase text-2xl">about</h1>
         <p className="text-[32px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt

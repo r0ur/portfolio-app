@@ -1,31 +1,40 @@
 import Container from '@/components/Container'
 import Background from '@/components/Background'
 import Hero from '@/components/Hero'
-import WorkGrid from '@/components/Work/WorkGrid'
-import AboutSection from '@/components/About/AboutSection'
-import ExperienceList from '@/components/About/ExperienceList'
+import Grid from '@/components/Work/Grid'
+import About from '@/components/About/About'
+import Experience from '@/components/About/Experience'
+import Certificates from '@/components/About/Certificates'
+import Technologies from '@/components/About/Technologies'
 
 export default function Home() {
   return (
-    <main>
-      <Container>
-        <Hero />
-      </Container>
+    <section>
+      <section id="home">
+        <Container>
+          <Hero />
+        </Container>
+      </section>
 
       <section id="work">
         <Container>
-          <WorkGrid />
+          <Grid />
         </Container>
       </section>
 
       <section id="about">
         <Background>
           <Container>
-            <AboutSection />
-            <ExperienceList />
+            <About />
+            <hr className="text-tertiary" />
+            <Experience />
+            <hr className="text-tertiary" />
+            <Certificates />
+            <hr className="text-tertiary" />
+            <Technologies />
           </Container>
         </Background>
       </section>
-    </main>
+    </section>
   )
 }

@@ -9,7 +9,7 @@ type Props = {
   alt?: string
 }
 
-export default function WorkCard({ href, title, subtitle, src, alt }: Props) {
+export default function Card({ href, title, subtitle, src, alt }: Props) {
   return (
     <Link href={href} className="block">
       <div className="relative aspect-16/10">

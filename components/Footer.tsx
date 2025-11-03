@@ -1,9 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-6xl px-6 py-10 border-t mt-16 text-sm text-zinc-500">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <p>© {new Date().getFullYear()} Armando Rojano</p>
-        <div className="flex gap-4">
+    <footer className="w-full h-dvh snap-start snap-always min-h-screen bg-primary flex flex-col items-center justify-center text-white">
+      <div className="text-center space-y-4">
+        <h2 className="text-3xl font-semibold">Let’s work together</h2>
+        <p className="text-lg">Get in touch or follow me on social media</p>
+        <div className="flex gap-6 justify-center">
           <a href="https://github.com/" target="_blank" rel="noreferrer">
             GitHub
           </a>
@@ -18,6 +19,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <p className="mt-10 text-sm text-white/60">© {new Date().getFullYear()} Armando Rojano</p>
     </footer>
   )
 }

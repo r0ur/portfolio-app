@@ -3,9 +3,9 @@ import Container from './Container'
 
 export default function Header() {
   return (
-    <header className="">
+    <header>
       <Container>
-        <div className="">
+        <div>
           <Navigation />
         </div>
       </Container>

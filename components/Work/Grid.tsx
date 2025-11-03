@@ -1,7 +1,7 @@
-import WorkCard from './WorkCard'
+import WorkCard from './Card'
 import { projects } from '@/data/projects'
 
-export default function WorkGrid() {
+export default function Grid() {
   return (
     <div>
       <h1 className="uppercase text-primary text-2xl">work</h1>

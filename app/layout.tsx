@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${inter.variable} ${robotoMono.variable} ${lora.variable}`}>
-      <body>
+    <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${lora.variable}`}>
+      <body className="snap-y snap-mandatory">
         <Header />
         <main>{children}</main>
         <Footer />
