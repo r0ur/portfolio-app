@@ -5,9 +5,7 @@ export default function Header() {
   return (
     <header>
       <Container>
-        <div>
-          <Navigation />
-        </div>
+        <Navigation />
       </Container>
     </header>
   )

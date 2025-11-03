@@ -1,11 +1,11 @@
-export type Project = {
+export type ProjectData = {
   slug: string
   title: string
   subtitle: string
   cover: string
 }
 
-export const projects: Project[] = [
+export const projects: ProjectData[] = [
   {
     slug: "ox-logistics",
     title: "OX Logistics",

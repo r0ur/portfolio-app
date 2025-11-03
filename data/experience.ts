@@ -1,4 +1,4 @@
-export type ExperienceItem = {
+export type ExperienceData = {
   id: string
   role: string
   company: string
@@ -7,7 +7,7 @@ export type ExperienceItem = {
   current?: boolean
 }
 
-export const experience: ExperienceItem[] = [
+export const experience: ExperienceData[] = [
   {
     id: 'liverpool',
     role: 'UX Designer',

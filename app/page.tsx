@@ -10,31 +10,18 @@ import Technologies from '@/components/About/Technologies'
 export default function Home() {
   return (
     <section>
-      <section id="home">
+      <Container>
+        <Hero />
+        <Grid />
+      </Container>
+      <Background>
         <Container>
-          <Hero />
+          <About />
+          <Experience />
+          <Certificates />
+          <Technologies />
         </Container>
-      </section>
-
-      <section id="work">
-        <Container>
-          <Grid />
-        </Container>
-      </section>
-
-      <section id="about">
-        <Background>
-          <Container>
-            <About />
-            <hr className="text-tertiary" />
-            <Experience />
-            <hr className="text-tertiary" />
-            <Certificates />
-            <hr className="text-tertiary" />
-            <Technologies />
-          </Container>
-        </Background>
-      </section>
+      </Background>
     </section>
   )
 }

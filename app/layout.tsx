@@ -20,7 +20,7 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: 'Armando Rojano — Portfolio',
+  title: 'Armando Rojano | Product Designer',
   description: 'Product Designer',
 }
 
