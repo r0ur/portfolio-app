@@ -10,20 +10,22 @@ import Marquee from '@/components/About/Marquee'
 
 export default function Home() {
   return (
-    <section>
-      <Container>
+    <main className="flex flex-col gap-20">
+      <Container className="flex flex-col gap-20">
         <Hero />
         <Grid />
       </Container>
       <Background>
-        <Container>
-          <About />
-          <Experience />
-          <Certificates />
-          <Technologies />
-        </Container>
-        <Marquee />
+        <div className="flex flex-col gap-20">
+          <Container className="flex flex-col gap-20">
+            <About />
+            <Experience />
+            <Certificates />
+            <Technologies />
+          </Container>
+          <Marquee />
+        </div>
       </Background>
-    </section>
+    </main>
   )
 }

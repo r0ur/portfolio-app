@@ -16,6 +16,7 @@ export const technologyCategories: TechnologyCategory[] = [
     title: 'Design',
     items: [
       { id: 'figma', name: 'Figma', icon: '/icons/solar_figma-linear.svg' },
+      { id: 'sketch', name: 'Sketch', icon: '/icons/lineicons_sketch.svg' },
       { id: 'marvel', name: 'Marvel', icon: '/icons/simple-icons_marvelapp.svg' },
       { id: 'zeplin', name: 'Zeplin', icon: '/icons/logos_zeplin.svg' },
       { id: 'storybook', name: 'Storybook', icon: '/icons/devicon_storybook.svg' },

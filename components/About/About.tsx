@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section>
       {about.map((description) => (
-        <div key={description.title} className="text-right gap-2 flex-col flex text-white">
+        <div key={description.title} className="text-right gap-2 flex-col flex text-white mt-20">
           <h1 className="uppercase font-light text-2xl">About</h1>
           <p className="text-5xl font-normal">{description.title}</p>
         </div>

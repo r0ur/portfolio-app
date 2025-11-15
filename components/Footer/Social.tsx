@@ -1,13 +1,7 @@
 'use client'
 
 import Container from '@/components/Container'
-
-const socialLinks = [
-  { label: 'Email', href: 'mailto:hola@catarsis.mx' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-  { label: 'Sixelf', href: 'https://sixelf.com/' },
-  { label: 'GitHub', href: 'https://github.com/' },
-]
+import { socialLinks } from '@/data/social'
 
 export default function FooterSocial() {
   const year = new Date().getFullYear()
@@ -17,15 +11,18 @@ export default function FooterSocial() {
   }
 
   return (
-    <div className="relative z-10 px-4 py-12 sm:py-16 lg:py-20" data-footer-social>
-      <Container className="flex min-h-screen flex-col justify-end gap-10 text-white">
-        <div className="flex flex-col gap-6 text-xs uppercase tracking-[0.2em] lg:flex-row lg:items-center lg:justify-between">
-          <p className="text-sm font-light">
+    <div
+      className="relative z-10 flex h-full w-full flex-col px-4 pb-[calc(15.375vw+16px)] pt-12 text-base font-light uppercase text-white sm:pt-16 lg:pt-20"
+      data-footer-social
+    >
+      <Container className="mt-auto flex flex-col">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <p>
             © <span className="tabular-nums">{year}</span>
           </p>
           <nav
-            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm"
-            aria-label="Social media links"
+            className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
+            aria-label="Social media"
           >
             {socialLinks.map((link) => (
               <a
@@ -33,7 +30,7 @@ export default function FooterSocial() {
                 href={link.href}
                 target={link.href.startsWith('http') ? '_blank' : undefined}
                 rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                className="transition hover:text-accent hover:underline underline-offset-4"
+                className="transition hover:text-accent hover:underline"
               >
                 {link.label} ↗
               </a>
@@ -42,7 +39,7 @@ export default function FooterSocial() {
           <button
             type="button"
             onClick={handleScrollTop}
-            className="text-sm uppercase transition hover:text-accent hover:underline underline-offset-4"
+            className="text-base font-light uppercase transition hover:text-accent hover:underline"
           >
             Scroll to top ↑
           </button>
