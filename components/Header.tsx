@@ -3,7 +3,7 @@ import Container from './Container'
 
 export default function Header() {
   return (
-    <header>
+    <header className="sticky top-0 z-50">
       <Container>
         <Navigation />
       </Container>
