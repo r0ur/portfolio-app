@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import FooterSection from '@/components/FooterSection'
 import { Inter, Roboto_Mono, Lora } from 'next/font/google'
 
 const inter = Inter({
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="snap-y snap-mandatory">
         <Header />
         <main>{children}</main>
-        <Footer />
+        <FooterSection />
       </body>
     </html>
   )

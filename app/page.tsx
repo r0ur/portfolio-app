@@ -6,6 +6,7 @@ import About from '@/components/About/About'
 import Experience from '@/components/About/Experience'
 import Certificates from '@/components/About/Certificates'
 import Technologies from '@/components/About/Technologies'
+import Marquee from '@/components/About/Marquee'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Certificates />
           <Technologies />
         </Container>
+        <Marquee />
       </Background>
     </section>
   )
