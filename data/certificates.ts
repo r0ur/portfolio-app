@@ -1,11 +1,42 @@
 export type CertificatesData = {
+  id: string
+  logo: string
+  issuer: string
   title: string
-  subtitle: string
+  date: string
+  href: string
 }
-
 export const certificates: CertificatesData[] = [
   {
-    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    subtitle: "When I'm not designing, I fuel my creativity by exploring my passions—photojournalism, reading novels and short stories, watching films, running, and gaming.",
-  }
+    id: 'certificate-meta',
+    logo: '/icons/mingcute_meta-fill.svg',
+    issuer: 'Meta',
+    title: 'Front-End Developer',
+    date: 'Issued Dec 2024',
+    href: 'https://www.coursera.org/account/accomplishments/specialization/PP36AF1CLIQL',
+  },
+  {
+    id: 'certificate-google',
+    logo: '/icons/ri_google-fill.svg',
+    issuer: 'Google',
+    title: 'UX Design',
+    date: 'Issued May 2024',
+    href: 'https://www.coursera.org/account/accomplishments/specialization/9ZF83F88L79P',
+  },
+  {
+    id: 'certificate-design-thinking',
+    logo: '/icons/certiprof.svg',
+    issuer: 'CertiProf',
+    title: 'Design Thinking',
+    date: 'Issued Feb 2024',
+    href: 'https://www.credly.com/badges/c45179d7-b68f-4841-90ec-2e69fd456ff3/public_url',
+  },
+  {
+    id: 'certificate-scrum',
+    logo: '/icons/certiprof.svg',
+    issuer: 'CertiProf',
+    title: 'Scrum Foundation',
+    date: 'Issued Aug 2023',
+    href: 'https://www.credly.com/badges/def86223-ec15-4b8b-9fb8-c6908ce22fc8/public_url',
+  },
 ]

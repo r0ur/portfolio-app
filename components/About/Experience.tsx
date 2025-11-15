@@ -3,14 +3,10 @@ import { experience } from '@/data/experience'
 export default function Experience() {
   return (
     <section>
-      <div className="flex w-fit flex-col text-white gap-16">
-        <div className="flex flex-col gap-2">
-          <h3 className="text-2xl uppercase font-light">Experience</h3>
-          <p className="max-w-[800px] text-3xl font-normal">
-            My curiosity and adaptability have helped me thrive in dynamic environments.
-          </p>
-        </div>
-
+      <div>
+        <h3 className="text-2xl text-white uppercase font-light mb-2">Experience</h3>
+      </div>
+      <div className="flex flex-col text-white gap-16">
         {experience.map((experience) => (
           <div key={experience.id} className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
@@ -22,22 +18,20 @@ export default function Experience() {
               ) : (
                 <div className="hidden h-4 w-4 shrink-0 rounded-full bg-tertiary lg:inline"></div>
               )}
-              <h4 className="text-3xl font-medium">
+              <h4 className="text-4xl font-medium">
                 {experience.role}
                 <span className="font-light"> at {experience.company}</span>
               </h4>
             </div>
             <div className="flex flex-col gap-2 lg:ml-7">
               <p className="max-w-prose font-light text-xl">{experience.description}</p>
-              <p className="text-xl text-tertiary font-light">{experience.period}</p>
+              <p className="text-base font-light uppercase">{experience.period}</p>
             </div>
           </div>
         ))}
 
         <a href="" target="_blank" className="w-fit">
-          <p className="pl-7 hover:underline text-tertiary uppercase text-base font-normal">
-            Download resume ↓
-          </p>
+          <p className="pl-7 hover:underline uppercase font-light text-base">Download resume ↓</p>
         </a>
       </div>
     </section>

@@ -14,19 +14,19 @@ export const projects: ProjectData[] = [
   },
   {
     slug: "binca",
-    title: "binca",
+    title: "Binca",
     subtitle: "landing — ux design",
     cover: "/images/projects/ox-logistics/cover.jpg",
   },
     {
     slug: "connect",
-    title: "connect",
+    title: "Connect",
     subtitle: "landing — ux design",
     cover: "/images/projects/ox-logistics/cover.jpg",
   },
       {
     slug: "invoice",
-    title: "invoice",
+    title: "Invoice",
     subtitle: "landing — ux design",
     cover: "/images/projects/ox-logistics/cover.jpg",
   },
