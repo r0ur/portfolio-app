@@ -4,7 +4,7 @@ import FooterSocial from '@/components/Footer/Social'
 
 export default function FooterSection() {
   return (
-    <section className="relative isolate h-screen overflow-hidden text-white">
+    <section className="relative isolate h-screen overflow-hidden text-white" id="contact">
       <FooterBackground />
       <FooterMark />
       <FooterSocial />

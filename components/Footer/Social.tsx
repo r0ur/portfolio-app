@@ -39,7 +39,7 @@ export default function FooterSocial() {
           <button
             type="button"
             onClick={handleScrollTop}
-            className="text-base font-light uppercase transition hover:text-accent hover:underline"
+            className="text-base font-light uppercase transition hover:text-accent cursor-pointer hover:underline"
           >
             Scroll to top ↑
           </button>

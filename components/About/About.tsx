@@ -2,7 +2,7 @@ import { about } from '@/data/about'
 
 export default function About() {
   return (
-    <section>
+    <section id="about">
       {about.map((description) => (
         <div key={description.title} className="text-right gap-2 flex-col flex text-white mt-20">
           <h1 className="uppercase font-light text-2xl">About</h1>

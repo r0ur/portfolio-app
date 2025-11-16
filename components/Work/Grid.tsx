@@ -3,7 +3,7 @@ import { projects } from '@/data/projects'
 
 export default function Grid() {
   return (
-    <div>
+    <section id="work">
       <h1 className="uppercase text-primary font-light mb-2 text-2xl">Work</h1>
       <div className="grid gap-12 grid-cols-2 ">
         {projects.map((p) => (
@@ -16,6 +16,6 @@ export default function Grid() {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
