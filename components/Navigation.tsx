@@ -26,7 +26,11 @@ export default function Navigation() {
           About
         </ButtonLink>
       </div>
-      <ButtonLink href="/#contact" variant="primary" className="hidden sm:inline-flex">
+      <ButtonLink
+        href="mailto:armandorour@outlook.com"
+        variant="primary"
+        className="hidden sm:inline-flex"
+      >
         Contact ↗
       </ButtonLink>
     </nav>

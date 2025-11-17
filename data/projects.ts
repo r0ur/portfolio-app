@@ -7,18 +7,11 @@ export type ProjectData = {
 }
 
 export const projects: ProjectData[] = [
-    {
-        slug: "little-lemon",
-        title: "Little Lemon",
-        subtitle: "Mobile App Design",
-        cover: "/images/projects/ox-logistics/cover.jpg",
-        year: "2025",
-    },
 {
   slug: "invoice-liverpool",
-  title: "Invoice",
+  title: "Invoicing",
   subtitle: "Web App Redesign",
-  cover: "/images/projects/ox-logistics/cover.jpg",
+  cover: "/images/projects/ox-logistics/BINCA2.png",
   year: "2025",
 },
 {
@@ -36,11 +29,11 @@ export const projects: ProjectData[] = [
   year: "2025",
 },
 {
-  slug: "binca",
-  title: "Binca",
-  subtitle: "Landing Page Design",
+  slug: "little-lemon",
+  title: "Little Lemon",
+  subtitle: "Mobile App Design",
   cover: "/images/projects/ox-logistics/cover.jpg",
-  year: "2024",
+  year: "2025",
 },
 {
   slug: "immersio",
@@ -81,6 +74,13 @@ export const projects: ProjectData[] = [
   slug: "ox-bi",
   title: "OX BI",
   subtitle: "Web App Design",
+  cover: "/images/projects/ox-logistics/cover.jpg",
+  year: "2024",
+},
+{
+  slug: "binca",
+  title: "Binca",
+  subtitle: "Landing Page Design",
   cover: "/images/projects/ox-logistics/cover.jpg",
   year: "2024",
 },
@@ -137,7 +137,7 @@ export const projects: ProjectData[] = [
   slug: "ox-logistics",
   title: "OX Logistics",
   subtitle: "Web App Design",
-  cover: "/images/projects/ox-logistics/cover.jpg",
+  cover: "/images/projects/ox-logistics/OX4.png",
   year: "2021",
 },
 ]

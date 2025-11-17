@@ -1,12 +1,18 @@
 import Card from './Card'
 import { projects } from '@/data/projects'
 
-export default function GridHero() {
+type Props = {
+  limit?: number
+}
+
+export default function GridHero({ limit = 2 }: Props) {
+  const projectList = projects.slice(0, limit)
+
   return (
     <section id="work" className="mx-8">
       <h1 className="uppercase text-primary font-light mb-2 text-2xl">Work</h1>
-      <div className="grid gap-8 grid-cols-2">
-        {projects.map((p) => (
+      <div className="grid gap-8 grid-cols-1 2xl:grid-cols-2">
+        {projectList.map((p) => (
           <Card
             key={p.slug}
             href={`/work/${p.slug}`}

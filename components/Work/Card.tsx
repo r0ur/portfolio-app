@@ -12,10 +12,17 @@ type Props = {
 export default function Card({ href, title, subtitle, src, alt }: Props) {
   return (
     <Link href={href} className="block">
-      <div className="relative aspect-16/10">
-        <Image src={src} alt={alt ?? title} fill className="object-cover" />
+      <div className="w-full">
+        <Image
+          src={src}
+          alt={alt ?? title}
+          width={0}
+          height={0}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, (max-width: 1536px) 33vw, 25vw"
+          className="h-auto w-full"
+        />
       </div>
-      <div className="uppercase pt-2 justify-between flex text-sm">
+      <div className="uppercase items-center pt-2 justify-between flex text-sm">
         <h3 className="font-base">{title}</h3>
         <h3 className="font-light text-tertiary">{subtitle}</h3>
       </div>

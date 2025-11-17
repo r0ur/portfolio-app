@@ -1,11 +1,18 @@
 import Card from './Card'
 import { projects } from '@/data/projects'
 
-export default function Grid() {
+type Props = {
+  skip?: number
+  limit?: number
+}
+
+export default function Grid({ skip = 2, limit }: Props) {
+  const projectList = projects.slice(skip, typeof limit === 'number' ? skip + limit : undefined)
+
   return (
-    <section id="work" className="mx-8">
-      <div className="grid gap-52 grid-cols-4">
-        {projects.map((p) => (
+    <section className="mx-8">
+      <div className="grid md:gap-20 grid-cols-1 gap-10 md:grid-cols-3 2xl:gap-52 2xl:grid-cols-4">
+        {projectList.map((p) => (
           <Card
             key={p.slug}
             href={`/work/${p.slug}`}

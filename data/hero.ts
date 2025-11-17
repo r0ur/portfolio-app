@@ -4,6 +4,6 @@ export type HeroData = {
 
 export const hero: HeroData[] = [
   {
-    title: "Product Designer who engineers—designing at the intersection of aesthetics, behavior, and code.",
+    title: "Product Designer focused on clarity, impact, and collaboration—bridging design, research, and code to build better experiences.",
   }
 ]

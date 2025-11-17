@@ -13,7 +13,7 @@ export default function Container<T extends ElementType = 'div'>({
   ...rest
 }: Props<T>) {
   const Tag = (as || 'div') as ElementType
-  const base = 'mx-auto w-full max-w-[1300px]'
+  const base = 'mx-auto w-full max-w-[1200px]'
   return (
     <Tag className={`${base} ${className}`} {...rest}>
       {children}
