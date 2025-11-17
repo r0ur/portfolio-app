@@ -3,9 +3,8 @@ import { projects } from '@/data/projects'
 
 export default function Grid() {
   return (
-    <section id="work">
-      <h1 className="uppercase text-primary font-light mb-2 text-2xl">Work</h1>
-      <div className="grid gap-12 grid-cols-2 ">
+    <section id="work" className="mx-8">
+      <div className="grid gap-52 grid-cols-4">
         {projects.map((p) => (
           <Card
             key={p.slug}

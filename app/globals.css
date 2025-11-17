@@ -8,9 +8,10 @@ html {
   /* Color Palette */
   --color-primary: #0001f7;
   --color-secondary: #0f1215;
-  --color-tertiary: #b3b3b3;
-  --color-black: #222222;
-  --color-white: #f8f8f8;
+  --color-tertiary: #292b28;
+  --color-quaternary: #ff1b2d;
+  --color-black: #000;
+  --color-white: #fff;
 
   /* Custom fonts */
   --font-sans:

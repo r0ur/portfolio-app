@@ -4,7 +4,7 @@ export default function Experience() {
   return (
     <section>
       <div>
-        <h3 className="text-2xl text-white uppercase font-light mb-2">Experience</h3>
+        <h3 className="text-2xl text-quaternary uppercase font-light mb-2">Experience</h3>
       </div>
       <div className="flex flex-col text-white gap-16">
         {experience.map((experience) => (
@@ -12,11 +12,11 @@ export default function Experience() {
             <div className="flex items-center gap-3">
               {experience.current ? (
                 <div className="relative hidden items-center justify-center lg:flex">
-                  <div className="live-animation h-4 w-4 rounded-full bg-white"></div>
-                  <div className="pulse-animation absolute h-4 w-4 rounded-full bg-white opacity-50"></div>
+                  <div className="live-animation h-4 w-4 rounded-full bg-quaternary"></div>
+                  <div className="pulse-animation absolute h-4 w-4 rounded-full bg-quaternary opacity-80"></div>
                 </div>
               ) : (
-                <div className="hidden h-4 w-4 shrink-0 rounded-full bg-tertiary lg:inline"></div>
+                <div className="hidden h-4 w-4 shrink-0 rounded-full bg-quaternary opacity-40 lg:inline"></div>
               )}
               <h4 className="text-4xl font-medium">
                 {experience.role}
@@ -31,7 +31,9 @@ export default function Experience() {
         ))}
 
         <a href="" target="_blank" className="w-fit">
-          <p className="pl-7 hover:underline uppercase font-light text-base">Download resume ↓</p>
+          <p className="pl-7 hover:underline hover:text-quaternary uppercase font-light text-base">
+            Download resume ↓
+          </p>
         </a>
       </div>
     </section>

@@ -6,7 +6,7 @@ export default function Hero() {
       {hero.map((text) => (
         <div key={text.title}>
           <div>
-            <h1 className="text-[32px] text-right">{text.title}</h1>
+            <h1 className="text-6xl text-right">{text.title}</h1>
           </div>
         </div>
       ))}

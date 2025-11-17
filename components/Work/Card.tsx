@@ -15,9 +15,9 @@ export default function Card({ href, title, subtitle, src, alt }: Props) {
       <div className="relative aspect-16/10">
         <Image src={src} alt={alt ?? title} fill className="object-cover" />
       </div>
-      <div className="uppercase items-center pt-2 justify-between flex text-sm font-medium">
-        <h3 className="font-medium">{title}</h3>
-        <h3 className="font-normal">{subtitle}</h3>
+      <div className="uppercase pt-2 justify-between flex text-sm">
+        <h3 className="font-base">{title}</h3>
+        <h3 className="font-light text-tertiary">{subtitle}</h3>
       </div>
     </Link>
   )

@@ -27,7 +27,7 @@ export const experience: ExperienceData[] = [
   },
   {
     id: 'ilum',
-    role: 'UI Designer, UX Designer, and UX Engineer',
+    role: 'UX/UI Designer, UX Researcher, and UX Engineer',
     company: 'Ilum Prosperity Sherpas',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
