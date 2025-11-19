@@ -11,15 +11,19 @@ export default function Grid({ skip = 2, limit }: Props) {
 
   return (
     <section className="mx-8">
-      <div className="grid md:gap-20 grid-cols-1 gap-10 md:grid-cols-3 2xl:gap-52 2xl:grid-cols-4">
+      <div
+        className="columns-1 gap-10 md:columns-2 lg:columns-3 2xl:columns-4"
+        style={{ columnGap: '2.5rem' }}
+      >
         {projectList.map((p) => (
-          <Card
-            key={p.slug}
-            href={`/work/${p.slug}`}
-            title={p.title}
-            subtitle={p.subtitle}
-            src={p.cover}
-          />
+          <div key={p.slug} className="mb-10 break-inside-avoid">
+            <Card
+              href={`/work/${p.slug}`}
+              title={p.title}
+              subtitle={p.subtitle}
+              src={p.cover}
+            />
+          </div>
         ))}
       </div>
     </section>

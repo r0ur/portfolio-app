@@ -11,15 +11,16 @@ export default function GridHero({ limit = 2 }: Props) {
   return (
     <section id="work" className="mx-8">
       <h1 className="uppercase text-primary font-light mb-2 text-2xl">Work</h1>
-      <div className="grid gap-8 grid-cols-1 2xl:grid-cols-2">
+      <div className="columns-1 gap-8 2xl:columns-2" style={{ columnGap: '2rem' }}>
         {projectList.map((p) => (
-          <Card
-            key={p.slug}
-            href={`/work/${p.slug}`}
-            title={p.title}
-            subtitle={p.subtitle}
-            src={p.cover}
-          />
+          <div key={p.slug} className="mb-8 break-inside-avoid">
+            <Card
+              href={`/work/${p.slug}`}
+              title={p.title}
+              subtitle={p.subtitle}
+              src={p.cover}
+            />
+          </div>
         ))}
       </div>
     </section>
