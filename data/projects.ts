@@ -11,7 +11,7 @@ export const projects: ProjectData[] = [
   slug: "invoice-liverpool",
   title: "Invoicing",
   subtitle: "Web App Redesign",
-  cover: "/images/projects/ox-logistics/BINCA2.png",
+  cover: "/images/projects/ox-logistics/cover.jpg",
   year: "2025",
 },
 {
@@ -137,7 +137,7 @@ export const projects: ProjectData[] = [
   slug: "ox-logistics",
   title: "OX Logistics",
   subtitle: "Web App Design",
-  cover: "/images/projects/ox-logistics/OX4.png",
+  cover: "/images/projects/ox-logistics/cover.jpg",
   year: "2021",
 },
 ]
